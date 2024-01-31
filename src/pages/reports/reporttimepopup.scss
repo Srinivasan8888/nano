@@ -1,0 +1,106 @@
+.reporttimepopup {
+    position: fixed;
+    width: 600px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffff;
+    padding: 50px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding-right: 5%;
+    border: solid 1px;
+
+    .live {
+        position: relative;
+        top: 10px;
+        left: 10px;
+
+        button {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(247, 136, 136);
+            color: rgb(243, 236, 236);
+            animation: backgroundAnimation 2s linear infinite
+        }
+        button:hover {
+            scale: 1.3;
+        }
+        @keyframes backgroundAnimation {
+            0% {
+              background-color: rgba(255, 0, 0, 0.411);
+            }
+            50% {
+              background-color: rgba(255, 0, 0, 0.829);
+            }
+            100% {
+                background-color: rgba(255, 0, 0, 0.288);
+            }
+          }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        color: rgb(243, 80, 80);
+        font-size: 30px;
+    }
+    .head {
+        font-size: large;
+        font-weight: 500;
+    }
+    .time {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .start{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            input {
+                border: solid 2px;
+            }
+        }
+        .end{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            input {
+                border: solid 2px;
+            }
+        }
+        button {
+            width: 80px;
+            height: 30px;
+            background-color: black;
+            color: rgb(243, 236, 236);
+        }
+    }
+}
+
+.overlay-report-time {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .7);
+    z-index: 1000;
+}

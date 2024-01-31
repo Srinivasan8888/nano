@@ -1,0 +1,92 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    .boxes {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 50px;
+
+        .box {
+            width: 400px;
+            height: 150px;
+            background-color: #393E46;
+            border-radius: 10px;
+            gap: 50px;
+            color: white;
+        }
+        .vibration {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .chart {
+                width: 170px;
+            }
+        }
+        .acoustic {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .chart {
+                position: relative;
+                width: 270px;
+            }
+        }
+        .humiduty {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .chart {
+                width: 170px;
+            }
+        }
+        .magnetic {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .chart {
+                width: 170px;
+            }
+        }
+        .rpm {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .chart {
+                width: 170px;
+            }
+        }
+        .temperature {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .chart {
+                width: 170px;
+            }
+        }
+        
+    }
+}
